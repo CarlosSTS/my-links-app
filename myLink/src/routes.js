@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator();
 
 export default function Routes() {
   return (
-    <Drawer.Navigator drawerContentOptions={{
+    <Drawer.Navigator initialRouteName="MyLinks" drawerContentOptions={{
       activeBackgroundColor: '#2ccbb9',
       activeTintColor: '#FFF',
       marginTop: 16,
