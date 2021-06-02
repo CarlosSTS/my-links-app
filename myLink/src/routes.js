@@ -9,13 +9,14 @@ const Drawer = createDrawerNavigator();
 
 export default function Routes() {
   return (
-    <Drawer.Navigator initialRouteName="MyLinks" drawerContentOptions={{
+    <Drawer.Navigator drawerContentOptions={{
       activeBackgroundColor: '#2ccbb9',
       activeTintColor: '#FFF',
       marginTop: 16,
       labelStyle: {
         fontSize: 19,
-      }
+      },
+      
     }}>
 
       <Drawer.Screen
@@ -39,7 +40,7 @@ export default function Routes() {
         name="MyLinks"
         component={MyLinks}
         options={{
-          title: 'Encurtar link',
+          title: 'Meus links',
           drawerIcon: ({ focused, size, color }) => {
             return (
               <Ionicons

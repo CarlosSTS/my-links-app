@@ -5,27 +5,27 @@ import {Feather} from '@expo/vector-icons'
 
 import {ModalContainer,Container,Header, LinkArea,Title,LongUrl,ShortLinkUrl,ShortLinkArea} from './styles'
 
-export default function ModalLink({onClose}) {
+export default function ModalLink({onClose,data}) {
 
   function copyLink() {
-    Clipboard.setString('hhtpkafas.com');
+    Clipboard.setString(data.link);
     Alert.alert('Sucesso','Link copiado com sucesso')
   }
 
  async function handleShare() {
     try {
         const result = await Share.share({
-          message: `Link: https:seuLink.com`
+          message: `Link: ${data.link}`
         });
 
         if(result.action === Share.sharedAction) {
           if(result.activityType) {
             console.log('ActivyType')
           }else {
-            console.log('Conpartilhou')
+            console.log('Compartilhou')
         }
       } else if(result.action === Share.dismissedAction){
-            console.log('Modal fedo')
+            console.log('Modal fechado')
           }
         
     }catch(error) {
@@ -60,13 +60,13 @@ export default function ModalLink({onClose}) {
 
     <LinkArea>
     <Title>Link encurtado</Title>
-    <LongUrl numberOfLines={1}>hthwethetnsdl.com</LongUrl>
+    <LongUrl numberOfLines={1}>{data.long_url}</LongUrl>
 
     <ShortLinkArea 
     activeOpacity={1}
     onPress={copyLink}
     >
-      <ShortLinkUrl numberOfLines={1}>fhtkfndg.com</ShortLinkUrl>
+      <ShortLinkUrl numberOfLines={1}>{data.link}</ShortLinkUrl>
       <TouchableOpacity onPress={copyLink}>
         <Feather 
         name="copy"
