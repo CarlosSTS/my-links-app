@@ -17,3 +17,13 @@ color: #FFF;
 export const ListLinks  = styled.FlatList`
 
 `; 
+
+export const ContainerEmpty = styled.View`
+margin-top: 15%;
+align-items: center;
+`;
+
+export const EmptyText = styled.Text`
+font-size: 16px;
+color: #fff;
+`;

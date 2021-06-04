@@ -12,6 +12,7 @@ import ModalLink from '../../components/ModalLink'
 import api from '../../services/api';
 
 import { ContainerLogo, Logo, ContainerContent, Title, SubTitle, ContainerInput, BoxIcon, Input, ButtonLink, ButtonLinkText } from './styles';
+import {saveLink} from "../../utils/storeLinks";
 
 export default function Home() {
     const [loading,setLoading] = useState(false)
@@ -27,6 +28,9 @@ export default function Home() {
          })
             setData(response.data)
             setModalVisible(true)
+              //SUCESSI , PRECISAR SALVAR LINK
+            saveLink('sujeitolinks', response.data)
+
          } catch {
              Alert.alert('Oops', 'Algo deu errado')
 
