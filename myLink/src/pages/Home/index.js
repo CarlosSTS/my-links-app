@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Keyboard, Platform, Alert, ActivityIndicator, TouchableWithoutFeedback,KeyboardAvoidingView, Modal, View, Text, Touchable } from 'react-native'
+import { Keyboard, Platform, Alert, ActivityIndicator, TouchableWithoutFeedback,KeyboardAvoidingView, Modal,BackHandler } from 'react-native'
 import *  as LocalAuthentication from 'expo-local-authentication'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Feather } from '@expo/vector-icons'
@@ -37,7 +37,10 @@ export default function Home() {
       setModaIslVisible(false)
 
     } else {
-      Alert.alert('Erro na autentcação.', 'Feche e abra seu aplicativo para tentar novamente')
+      Alert.alert('Erro na autentcação 😔', 'Feche e abra seu aplicativo para tentar novamente', [
+        { text: "OK", onPress: () => BackHandler.exitApp() }
+
+      ])
     }
   }
 
