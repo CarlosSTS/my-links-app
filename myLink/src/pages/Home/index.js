@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Keyboard, Platform, Alert, ActivityIndicator, TouchableWithoutFeedback, KeyboardAvoidingView, Modal } from 'react-native'
+import { Keyboard, Platform, Alert, ActivityIndicator, TouchableWithoutFeedback,KeyboardAvoidingView, Modal, View, Text, Touchable } from 'react-native'
 import *  as LocalAuthentication from 'expo-local-authentication'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Feather } from '@expo/vector-icons'
@@ -19,22 +19,26 @@ export default function Home() {
   const [loading, setLoading] = useState(false)
   const [input, setInput] = useState('')
   const [modalVisible, setModalVisible] = useState(false)
+  const [modaIslVisible, setModaIslVisible] = useState(true)
+
   const [data, setData] = useState({})
 
 
   async function authenticate() {
 
     const hasPassword = await LocalAuthentication.isEnrolledAsync();
-      if(!hasPassword) {
-        return;
-      }
-      const {success,error} = await LocalAuthentication.authenticateAsync();
+    if (!hasPassword) {
+      return;
+    }
+    const { success, error } = await LocalAuthentication.authenticateAsync();
 
-      if(success) {
-        Alert.alert('Sucesso', 'Autenticação realizada com sucesso')
-      } else {
-        Alert.alert('Avisso', 'Erro na autenticação')
-      }
+    if (success) {
+      Alert.alert('Sucesso', 'Autenticação realizada com sucesso')
+      setModaIslVisible(false)
+
+    } else {
+      Alert.alert('Erro na autentcação.', 'Feche e abra seu aplicativo para tentar novamente')
+    }
   }
 
   Platform.OS == 'ios' && authenticate();
@@ -119,6 +123,16 @@ export default function Home() {
           <ModalLink onClose={() => setModalVisible(false)} data={data} />
         </Modal>
 
+        {Platform.OS === 'android' && (
+          <Modal
+            visible={modaIslVisible}
+            transparent
+            animationType="slide"
+            onShow={authenticate}
+          >
+               
+          </Modal>
+        )}
       </LinearGradient>
     </TouchableWithoutFeedback>
   )

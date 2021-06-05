@@ -74,5 +74,5 @@ border-radius: 8px;
 `;
 
 export const ButtonLinkText = styled.Text`
-font-size: 18px
+font-size: 18px;
 `;
