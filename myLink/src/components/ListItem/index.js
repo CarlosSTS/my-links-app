@@ -1,21 +1,37 @@
 import React from 'react'
+import {useNavigation} from '@react-navigation/native'
 import { View } from 'react-native'
-import {Feather} from '@expo/vector-icons'
+import {Feather,MaterialIcons} from '@expo/vector-icons'
 import Swipeable from 'react-native-gesture-handler/Swipeable'
 
 import {ContainerButton,Item,ActionContainer} from './styles';
 
 export default function ListItem({data, selectedItem,deleteItem  }) {
 
+  const navigation = useNavigation()
+
+  function navigateOpenLinkBrowser(link) {
+    navigation.navigate('OpenLinkBrowser', link)
+  }
+
   function RightActions() {
     return(
+      <>
+      <ActionContainer onPress={() => navigateOpenLinkBrowser(data.link)}>
+        <MaterialIcons 
+          name='open-in-browser'
+          color='#fff'
+          size={32}
+          />
+      </ActionContainer>
       <ActionContainer onPress={() => deleteItem(data.id)}>
         <Feather 
-          name='trash'
+          name='trash-2'
           color='#fff'
           size={24}
           />
       </ActionContainer>
+      </>
     )
   }
   

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Alert, TouchableOpacity, TouchableWithoutFeedback,View,Share } from 'react-native'
 import Clipboard from 'expo-clipboard'
-import {Feather} from '@expo/vector-icons'
+import {Feather,Entypo} from '@expo/vector-icons'
 
 import {ModalContainer,Container,Header, LinkArea,Title,LongUrl,ShortLinkUrl,ShortLinkArea} from './styles'
 
@@ -50,7 +50,7 @@ export default function ModalLink({onClose,data}) {
       />
     </TouchableOpacity>
     <TouchableOpacity onPress={handleShare}>
-      <Feather 
+      <Entypo 
       name="share"
       color="#212743"
       size={30}

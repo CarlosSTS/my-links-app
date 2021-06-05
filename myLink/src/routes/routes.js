@@ -2,8 +2,8 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { Ionicons } from '@expo/vector-icons'
 
-import Home from './pages/Home'
-import MyLinks from './pages/MyLinks'
+import Home from '../pages/Home'
+import StackRoutes from './stack.routes'
 
 const Drawer = createDrawerNavigator();
 
@@ -37,8 +37,8 @@ export default function Routes() {
       />
       
       <Drawer.Screen
-        name="MyLinks"
-        component={MyLinks}
+        name="StackRoutes"
+        component={StackRoutes}
         options={{
           title: 'Meus links',
           drawerIcon: ({ focused, size, color }) => {
