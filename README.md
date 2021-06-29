@@ -17,7 +17,6 @@ O app contém os seguintes módulos
 * uma tela com todos todos os links cadastrados
 * uma webView para acessar o link cadastrado 
 
-
 ## Explicação do sistema no LinkedIn
 * [Explicação do sistema](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_js-reactnative-desafios-activity-6807696684513021952-pgpQ)
 
@@ -32,7 +31,6 @@ RODANDO O PROJETO MOBILE
 * yarn start => para inicializar o projeto
 * yarn android => para executar o projeto no emulador android
 * yarn ios => Para executar no emulador iOS
-
 
 ## Feito por Carlos Ferreira
 * [github](https://www.github.com/CarlosSTS)
