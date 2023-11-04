@@ -1,4 +1,4 @@
-# RNInsider
+# My-links-app
 um projeto criado no evento react-native-insider 3.0.
 
 1. Sistema para gerenciamento e copartilhamento de links.
