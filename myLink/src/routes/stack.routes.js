@@ -14,7 +14,6 @@ const StackRoutes = () => {
     <Stack.Navigator screenOptions={{
       headerTitleAlign: "center",
       headerBackTitleVisible: false,
-
       headerTintColor: "#fff",
       headerStyle: {
         backgroundColor: "#132742",
