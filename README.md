@@ -26,23 +26,23 @@ O app contém os seguintes módulos
 
 <table>
   <tr>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2Flogo.png?alt=media&token=3b18edc2-fbf5-4d49-a1ec-f630fafb7908" alt="Foto do App logo" width="360" /></td>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2Fauthenticate.png?alt=media&token=683670fa-52a4-4550-88fe-da6858d8e8cd" alt="Foto do App authenticate" width="360" /></td>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2Fhome.png?alt=media&token=71d7bc59-5c2b-4ff0-a90f-7ca9afdf37c8" alt="Foto do App home" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/logo.png" alt="Foto do App logo" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/authenticate.png" alt="Foto do App authenticate" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/home.png" alt="Foto do App home" width="360" /></td>
 </tr>
 </table>
 
 <table>
   <tr>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2Fmodal.png?alt=media&token=ba75d318-1400-4040-a3c9-6e8f907ec04c" alt="Foto do App modal" width="360" /></td>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2Fdrawer.png?alt=media&token=ae51c457-928b-4cea-b123-609cc5690a91" alt="Foto do App drawer" width="360" /></td>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2FmyLinks.png?alt=media&token=1f8a93a6-793c-4225-b0bb-1af109461f9e" alt="Foto do App myLinks" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/modal.png" alt="Foto do App modal" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/drawer.png" alt="Foto do App drawer" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/myLinks.png" alt="Foto do App myLinks" width="360" /></td>
 </tr>
 </table>
 
 <table>
   <tr>
-<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fmy-links-app%2FwebView.png?alt=media&token=1f3e3311-1b96-4c2b-8250-eb6793bb120d" alt="Foto do App webView" width="360" /></td>
+<td><img src="https://res.cloudinary.com/dbw8igay3/image/upload/github_projects/my-links-app/webView.png" alt="Foto do App webView" width="360" /></td>
 </tr>
 </table>
 
@@ -58,5 +58,5 @@ RODANDO O PROJETO MOBILE
 ## Feito por Carlos Ferreira
 
 - [Github](https://www.github.com/CarlosSTS)
-- [Email](mailto://carlossts826@gmail.com)
+- [Email](mailto://carlossts.dev@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/carlos-ferreira-4b2ba219a/)
